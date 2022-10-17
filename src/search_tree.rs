@@ -2,12 +2,16 @@
 
 use std;
 
-use super::*;
-use atomics::*;
-use std::fmt;
-use std::fmt::{Debug, Display, Formatter};
-use std::ptr::{null, null_mut};
-use std::sync::Mutex;
+use {
+	super::*,
+	atomics::*,
+	std::{
+		fmt,
+		fmt::{Debug, Display, Formatter},
+		ptr::{null, null_mut},
+		sync::Mutex,
+	},
+};
 
 use tree_policy::TreePolicy;
 
